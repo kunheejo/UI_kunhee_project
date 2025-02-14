@@ -303,7 +303,7 @@
 							</div>
 						</div>
 						<div class="dropdown me-3 d-none d-lg-block">
-							<button class="btn btn-primary px-6" type="button" id="dropdownMenuButton1"
+							<button class="btn btn-warning px-6" type="button" id="dropdownMenuButton1"
 								data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="me-1">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -315,7 +315,7 @@
 										<rect x="3" y="14" width="7" height="7"></rect>
 									</svg>
 								</span>
-								All Departments
+								All Departmentsd
 							</button>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 								<li><a class="dropdown-item" href="./pages/shop-grid.html">Dairy, Bread & Eggs</a></li>
@@ -538,43 +538,34 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content p-4">
 				<div class="modal-header border-0">
-					<h5 class="modal-title fs-3 fw-bold" id="userModalLabel">Sign Up</h5>
+					<h5 class="modal-title fs-3 fw-bold" id="userModalLabel">로그인</h5>
 
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form class="needs-validation" novalidate>
+						 
 						<div class="mb-3">
-							<label for="fullName" class="form-label">Name</label>
-							<input type="text" class="form-control" id="fullName" placeholder="Enter Your Name"
+							<label for="email" class="form-label">이메일</label>
+							<input type="email" class="form-control" id="email" placeholder="이메일 "
 								required />
-							<div class="invalid-feedback">Please enter name.</div>
+							<div class="invalid-feedback">이메일을 입력해 주세요..</div>
 						</div>
 						<div class="mb-3">
-							<label for="email" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="email" placeholder="Enter Email address"
+							<label for="password" class="form-label">비밀번호</label>
+							<input type="password" class="form-control" id="password" placeholder="비밀번호"
 								required />
-							<div class="invalid-feedback">Please enter email.</div>
-						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="Enter Password"
-								required />
-							<div class="invalid-feedback">Please enter password.</div>
-							<small class="form-text">
-								By Signup, you agree to our
-								<a href="#!">Terms of Service</a>
-								&
-								<a href="#!">Privacy Policy</a>
-							</small>
+							<div class="invalid-feedback">비밀번호를 입력해 주세요..</div>
+							 
 						</div>
 
-						<button type="submit" class="btn btn-primary" type="submit">Sign Up</button>
+						<button type="submit" class="btn btn-warning" type="submit">로그인</button>
+						<a href="./pages/forgot-password.html" style="float: right; color: rgb(117, 114, 114);">비밀번호를 잊으셨나요?</a>
 					</form>
 				</div>
 				<div class="modal-footer border-0 justify-content-center">
-					Already have an account?
-					<a href="#">Sign in</a>
+					 계정이 없으신가요?
+					<a href="./pages/signup.html" style="color:rgb(160, 160, 0)">가입하기</a>
 				</div>
 			</div>
 		</div>
