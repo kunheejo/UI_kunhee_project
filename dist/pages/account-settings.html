@@ -461,20 +461,20 @@
 								</li>
 								<li class="nav-item dropdown w-100 w-lg-auto">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">Account</a>
+										aria-expanded="false">계정</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="../pages/signin.html">Sign in</a></li>
-										<li><a class="dropdown-item" href="../pages/signup.html">Signup</a></li>
-										<li><a class="dropdown-item" href="../pages/forgot-password.html">Forgot
-												Password</a></li>
+										<li><a class="dropdown-item" href="../pages/signin.html">로그인</a></li>
+										<li><a class="dropdown-item" href="../pages/signup.html">회원가입</a></li>
+										<li><a class="dropdown-item" href="../pages/forgot-password.html">비밀번호 찾기
+											</a></li>
 										<li class="dropdown-submenu dropend">
 											<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
-												href="#">My Account</a>
+												href="#">나의 계정</a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item"
 														href="../pages/account-orders.html">Orders</a></li>
 												<li><a class="dropdown-item"
-														href="../pages/account-settings.html">Settings</a></li>
+														href="../pages/account-settings.html">설정</a></li>
 												<li><a class="dropdown-item"
 														href="../pages/account-address.html">Address</a></li>
 												<li><a class="dropdown-item"
@@ -541,43 +541,34 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content p-4">
 				<div class="modal-header border-0">
-					<h5 class="modal-title fs-3 fw-bold" id="userModalLabel">Sign Up</h5>
+					<h5 class="modal-title fs-3 fw-bold" id="userModalLabel">로그인</h5>
 
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form class="needs-validation" novalidate>
+						 
 						<div class="mb-3">
-							<label for="fullName" class="form-label">Name</label>
-							<input type="text" class="form-control" id="fullName" placeholder="Enter Your Name"
+							<label for="email" class="form-label">이메일</label>
+							<input type="email" class="form-control" id="email" placeholder="이메일 "
 								required />
-							<div class="invalid-feedback">Please enter name.</div>
+							<div class="invalid-feedback">이메일을 입력해 주세요..</div>
 						</div>
 						<div class="mb-3">
-							<label for="email" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="email" placeholder="Enter Email address"
+							<label for="password" class="form-label">비밀번호</label>
+							<input type="password" class="form-control" id="password" placeholder="비밀번호"
 								required />
-							<div class="invalid-feedback">Please enter email.</div>
-						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="Enter Password"
-								required />
-							<div class="invalid-feedback">Please enter password.</div>
-							<small class="form-text">
-								By Signup, you agree to our
-								<a href="#!">Terms of Service</a>
-								&
-								<a href="#!">Privacy Policy</a>
-							</small>
+							<div class="invalid-feedback">비밀번호를 입력해 주세요..</div>
+							 
 						</div>
 
-						<button type="submit" class="btn btn-primary" type="submit">Sign Up</button>
+						<button type="submit" class="btn btn-warning" type="submit">로그인</button>
+						<a href="./pages/forgot-password.html" style="float: right; color: rgb(117, 114, 114);">비밀번호를 잊으셨나요?</a>
 					</form>
 				</div>
 				<div class="modal-footer border-0 justify-content-center">
-					Already have an account?
-					<a href="#">Sign in</a>
+					 계정이 없으신가요?
+					<a href="./pages/signup.html" style="color:rgb(160, 160, 0)">가입하기</a>
 				</div>
 			</div>
 		</div>
@@ -1010,7 +1001,7 @@
 								<li class="nav-item">
 									<a class="nav-link active" href="account-settings.html">
 										<i class="feather-icon icon-settings me-2"></i>
-										Settings
+										설정
 									</a>
 								</li>
 								<!-- nav item -->
@@ -1052,34 +1043,34 @@
 						<div class="py-6 p-md-6 p-lg-10">
 							<div class="mb-6">
 								<!-- heading -->
-								<h2 class="mb-0">Account Setting</h2>
+								<h2 class="mb-0">계정 관리</h2>
 							</div>
 							<div>
 								<!-- heading -->
-								<h5 class="mb-4">Account details</h5>
+								<h5 class="mb-4">개인정보 수정</h5>
 								<div class="row">
 									<div class="col-lg-5">
 										<!-- form -->
 										<form>
 											<!-- input -->
 											<div class="mb-3">
-												<label class="form-label">Name</label>
-												<input type="text" class="form-control" placeholder="jitu chauhan" />
+												<label class="form-label">이름</label>
+												<input type="text" class="form-control" placeholder="ex) 길동 홍" />
 											</div>
 											<!-- input -->
 											<div class="mb-3">
-												<label class="form-label">Email</label>
+												<label class="form-label">이메일</label>
 												<input type="email" class="form-control"
-													placeholder="example@gmail.com" />
+													placeholder="ex) example@gmail.com" />
 											</div>
 											<!-- input -->
 											<div class="mb-5">
-												<label class="form-label">Phone</label>
-												<input type="text" class="form-control" placeholder="Phone number" />
+												<label class="form-label">  번호</label>
+												<input type="text" class="form-control" placeholder="ex) 010********" />
 											</div>
 											<!-- button -->
 											<div class="mb-3">
-												<button class="btn btn-primary">Save Details</button>
+												<button class="btn btn-warning">저장하기</button>
 											</div>
 										</form>
 									</div>
@@ -1088,37 +1079,37 @@
 							<hr class="my-10" />
 							<div class="pe-lg-14">
 								<!-- heading -->
-								<h5 class="mb-4">Password</h5>
+								<h5 class="mb-4">비밀번호 변경</h5>
 								<form class="row row-cols-1 row-cols-lg-2">
 									<!-- input -->
 									<div class="mb-3 col">
-										<label class="form-label">New Password</label>
+										<label class="form-label">새로운 비밀번호</label>
 										<input type="password" class="form-control" placeholder="**********" />
 									</div>
 									<!-- input -->
 									<div class="mb-3 col">
-										<label class="form-label">Current Password</label>
+										<label class="form-label">현재 비밀번호</label>
 										<input type="password" class="form-control" placeholder="**********" />
 									</div>
 									<!-- input -->
 									<div class="col-12">
 										<p class="mb-4">
-											Can’t remember your current password?
-											<a href="#">Reset your password.</a>
+											비밀번호를 잊으셨나요?
+											<a href="forgot-password.html" style="color: rgb(160, 160, 0);">비밀번호 찾기</a>
 										</p>
-										<a href="#" class="btn btn-primary">Save Password</a>
+										<a href="#" class="btn btn-warning">저장하기</a>
 									</div>
 								</form>
 							</div>
 							<hr class="my-10" />
 							<div>
 								<!-- heading -->
-								<h5 class="mb-4">Delete Account</h5>
-								<p class="mb-2">Would you like to delete your account?</p>
+								<h5 class="mb-4">계정 삭제</h5>
+								<p class="mb-2">계정을 삭제하시겠습니까?</p>
 								<p class="mb-5">This account contain 12 orders, Deleting your account will remove all
 									the order details associated with it.</p>
 								<!-- btn -->
-								<a href="#" class="btn btn-outline-danger">I want to delete my account</a>
+								<a href="#" class="btn btn-outline-danger">삭제하기</a>
 							</div>
 						</div>
 					</div>

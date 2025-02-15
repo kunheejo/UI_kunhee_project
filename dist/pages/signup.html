@@ -30,7 +30,7 @@
           <img src="../assets/images/logo/freshcart-logo.svg" alt="" class="d-inline-block align-text-top">
         </a>
         <span class="navbar-text">
-          Already have an account? <a href="../pages/signin.html">Sign in</a>
+          계정이 있으신가요? &nbsp;&nbsp;<a href="../pages/signin.html" style="color: rgb(160, 160, 0);"> 로그인</a>
         </span>
       </div>
     </nav>
@@ -63,19 +63,19 @@
                   <!-- input -->
                   <label for="formSignupfname" class="form-label visually-hidden">First Name</label>
                   <input type="text" class="form-control" id="formSignupfname" placeholder="이름" required />
-                  <div class="invalid-feedback">Please enter first name.</div>
+                  <div class="invalid-feedback">이름을 입력하세요.</div>
                 </div>
                 <div class="col">
                   <!-- input -->
                   <label for="formSignuplname" class="form-label visually-hidden">Last Name</label>
                   <input type="text" class="form-control" id="formSignuplname" placeholder="성" required />
-                  <div class="invalid-feedback">Please enter last name.</div>
+                  <div class="invalid-feedback">성을 입력하세요.</div>
                 </div>
                 <div class="col-12">
                   <!-- input -->
                   <label for="formSignupEmail" class="form-label visually-hidden">Email address</label>
-                  <input type="email" class="form-control" id="formSignupEmail" placeholder="이메일" required />
-                  <div class="invalid-feedback">Please enter email.</div>
+                  <input type="email" class="form-control" id="formSignupEmail" placeholder="ex) example@gmail.com" required />
+                  <div class="invalid-feedback">이메일을 입력하세요.</div>
                 </div>
                 <div class="col-12">
                   <div class="password-field position-relative">
@@ -84,7 +84,7 @@
                       <input type="password" class="form-control fakePassword" id="formSignupPassword"
                         placeholder="*****" required />
                       <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                      <div class="invalid-feedback">Please enter password.</div>
+                      <div class="invalid-feedback">비밀번호를 입력하세요.</div>
                     </div>
                   </div>
                 </div>
@@ -93,11 +93,12 @@
                 <p>
               
                   <small>
+                     
                     약관동의<br>
                      
-                    <a href="" style="color: rgb(161, 161, 0);">서비스 약관</a>에 동의합니다<br>
+                    <input type="checkbox" class="checkbox"><a href="" style="color: rgb(161, 161, 0);">서비스 약관</a>에 동의합니다<br>
                     
-                    <a href="" style="color: rgb(161, 161, 0);">개인정보 수집 및 이용</a>에 동의합니다
+                    <input type="checkbox" class="checkbox"><a href="" style="color: rgb(161, 161, 0);">개인정보 수집 및 이용</a>에 동의합니다
                   </small>
                 </p>
                 <!-- btn -->
