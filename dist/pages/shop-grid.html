@@ -284,7 +284,7 @@
                      </div>
                   </div>
                   <div class="dropdown me-3 d-none d-lg-block">
-                     <button class="btn btn-warning px-6" type="button" id="dropdownMenuButton1"
+                     <button class="btn btn-primary px-6" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="me-1">
                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -425,18 +425,18 @@
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 										aria-expanded="false">계정 </a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="./pages/signin.html">로그인</a></li>
-										<li><a class="dropdown-item" href="./pages/signup.html">회원가입</a></li>
-										<li><a class="dropdown-item" href="./pages/forgot-password.html">비밀번호 찾기
+										<li><a class="dropdown-item" href="/dist/pages/signin.html">로그인</a></li>
+										<li><a class="dropdown-item" href="/dist/pages/signup.html">회원가입</a></li>
+										<li><a class="dropdown-item" href="/dist/pages/forgot-password.html">비밀번호 찾기
 												 </a></li>
 										<li class="dropdown-submenu dropend">
 											<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
 												href="#">나의 계정</a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item"
-														href="./pages/account-orders.html">Orders</a></li>
+														href="/dist/pages/account-orders.html">나의 목록</a></li>
 												<li><a class="dropdown-item"
-														href="./pages/account-settings.html">설정</a></li>
+														href="/dist/pages/account-settings.html">설정</a></li>
 												<li><a class="dropdown-item"
 														href="./pages/account-address.html">Address</a></li>
 												<li><a class="dropdown-item"
@@ -522,7 +522,7 @@
 							 
 						</div>
 
-						<button type="submit" class="btn btn-warning" type="submit">로그인</button>
+						<button type="submit" class="btn btn-primary" type="submit">로그인</button>
 						<a href="./pages/forgot-password.html" style="float: right; color: rgb(117, 114, 114);">비밀번호를 잊으셨나요?</a>
 					</form>
 				</div>
@@ -1325,8 +1325,25 @@
                   <div class="card mb-4 bg-light border-0">
                      <!-- card body -->
                      <div class="card-body p-9">
-                        <h2 class="mb-0 fs-1">생활/주방</h2>
+                        <h2 class="mb-0 fs-1">생활/주방  
+
+                           <button class="btn btn-primary" style="float: right;">
+                           
+                           <a href="#!" class="btn btn-primary btn-sm" style="font-size: 20px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                 <line x1="12" y1="5" x2="12" y2="19"></line>
+                                 <line x1="5" y1="12" x2="19" y2="12"></line>
+                              </svg>
+                              등록하기
+                           </a>
+
+                        </button>
+                     </h2>
+                        
                      </div>
+                      
                   </div>
                   <!-- list icon -->
                   <div class="d-lg-flex justify-content-between align-items-center">
@@ -1340,12 +1357,12 @@
                      <!-- icon -->
                      <div class="d-md-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center justify-content-between">
-                           <div>
+                           <!-- <div>
                               <a href="shop-list.html" class="text-muted me-3"><i class="bi bi-list-ul"></i></a>
                               <a href="shop-grid.html" class="me-3 active"><i class="bi bi-grid"></i></a>
                               <a href="shop-grid-3-column.html" class="me-3 text-muted"><i
                                     class="bi bi-grid-3x3-gap"></i></a>
-                           </div>
+                           </div> -->
                            <div class="ms-2 d-lg-none">
                               <a class="btn btn-outline-gray-400 text-muted" data-bs-toggle="offcanvas"
                                  href="#offcanvasCategory" role="button" aria-controls="offcanvasCategory">
